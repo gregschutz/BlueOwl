@@ -19,9 +19,8 @@ function App() {
 
     const sortCard = () => {
         //sort cards, then save to useState
-        //setCards(
-           // return [...prevCards, { number: Math.floor(Math.random() * 100) + 1, visible: true }]
-        //});
+        cards.sort((a, b) => (a.number > b.number) ? 1 : -1);
+        setCards([...cards]);
     }
 
     return (
