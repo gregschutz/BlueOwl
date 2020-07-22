@@ -3,7 +3,6 @@ import Card from './Card';
 
 export default function CardContainer({ cards }) {
 
-
     return (
         
             <div>
@@ -14,7 +13,7 @@ export default function CardContainer({ cards }) {
                             {
                                 cards.map(card => {
                                     return (
-                                        <Card key={card.number} cards={card} />
+                                        <Card key={card.number} card={card} />
                                     )
                                 })
                             }
@@ -23,7 +22,7 @@ export default function CardContainer({ cards }) {
                     </div>
                     <div id="sectionInstructions" className="justify-content-end p-3">
                         <h4>Instructions</h4>
-                        <ol class="mt-4">
+                        <ol className="mt-4">
                             <li>Click the add card button to add a new card to the page.</li>
                             <li>Click the sort card button to sort the cards by their numbers.</li>
                             <li>....</li>

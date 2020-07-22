@@ -39,13 +39,13 @@ body {
 #sectionInstructions {
     width: 350px;
     min-width: 350px;
-    height: calc(100vh - 114px);
+    height: calc(100vh - 140px);
     border-left: 1px solid #777;
     background-color: #ddd;
 }
 
 #sectionCard {
-    height: calc(100vh - 114px);
+    height: calc(100vh - 140px);
     overflow-y: scroll;
 }
 
