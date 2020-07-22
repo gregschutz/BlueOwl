@@ -6,9 +6,9 @@ export default function Card({ cards }) {
     const deleteCard = () => {
         //remove card
         //let thiscard = document.getElementsByClassName('card-text');
-        alert(card.length);
-        let c = [...card].filter((n) => parseInt(n.number) !== parseInt(num));
-        removeCard([...c]);
+        //alert(card.length);
+        //let c = card.filter((n) => parseInt(n.number) !== parseInt(num));
+        //removeCard([...c]);
 
     }
 
