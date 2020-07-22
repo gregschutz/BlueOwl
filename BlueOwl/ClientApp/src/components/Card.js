@@ -20,8 +20,8 @@ export default function Card({ cards }) {
                         <span className="flex-fill">Title</span>
                         <button className="btn btn-sm btn-secondary d-inline-block justify-content-end" onClick={deleteCard}>X</button>
                     </div>
-                    <div className="card-body">
-                        <h4 className="card-text text-center">{cards.number}</h4>
+                    <div className="card-body d-flex justify-content-center align-items-center">
+                        <h2 className="card-text">{cards.number}</h2>
                     </div>
                 </div>
             )
