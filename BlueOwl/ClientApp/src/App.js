@@ -10,13 +10,10 @@ import './css/custom.css';
 function App() {
     const [cards, setCards] = useState([]); //default card values
 
-    
-
-
     return (
         <GlobalContext.Provider value={[cards, setCards]} >
             <NavMenu />        
-            <CardContainer key={cards.length} cards={cards}  />
+            <CardContainer />
             <Footer />   
         </GlobalContext.Provider>
     );

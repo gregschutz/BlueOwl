@@ -1,7 +1,9 @@
-﻿import React from 'react';
+﻿import React, { useContext } from 'react';
 import Card from './Card';
+import { GlobalContext } from './GlobalContext';
 
-export default function CardContainer({ cards }) {
+export default function CardContainer(){
+    const [cards, setCards] = useContext(GlobalContext);
 
     return (
         

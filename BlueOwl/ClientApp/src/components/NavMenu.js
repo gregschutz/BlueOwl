@@ -4,14 +4,14 @@ import { GlobalContext } from './GlobalContext';
 import { Link } from 'react-router-dom';
 import '../css/NavMenu.css';
 
-export default function NavMenu({ cards }) {
-    const [card, setCards] = useContext(GlobalContext);
+export default function NavMenu() {
+    const [cards, setCards] = useContext(GlobalContext);
 
     const number = Math.floor(Math.random() * 100) + 1;   
 
     const addCard = () => {
 
-        setCards([...card, {
+        setCards([...cards, {
             number: number,
             visible: true
         }])
@@ -19,8 +19,8 @@ export default function NavMenu({ cards }) {
 
     const sortCard = () => {
         //sort cards, then save to useState
-        card.sort((a, b) => (a.number > b.number) ? 1 : -1);
-        setCards([...card]);
+        cards.sort((a, b) => (a.number > b.number) ? 1 : -1);
+        setCards([...cards]);
     }
 
  
