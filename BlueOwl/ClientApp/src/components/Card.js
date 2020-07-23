@@ -3,13 +3,12 @@ import { GlobalContext } from './GlobalContext';
 
 
 export default function Card({ card }) {
-    const [cards, setCards] = useContext(GlobalContext);
+const [cards, setCards] = useContext(GlobalContext);
 
 
     const deleteCard = (num) => {
         //remove card
         
-        //alert(num);
         //console.log('this is a card: ' + cards.length);
         let c = cards.filter((n) => parseInt(n.number) !== parseInt(num));
         setCards([...c]);
